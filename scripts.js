@@ -52,6 +52,20 @@ function filterAllItems() {
   showAll(filterJustVega)
 }
 
+document.addEventListener("DOMContentLoaded", function(){
+document.body.addEventListener("autoplay",playVideo);
+function playVideo(){
+
+  const video = document.getElementById('myvideo');
+  if(video.playing){
+
+  } else {
+    video.play();
+  }
+}
+
+});
+
 buttonShowall.addEventListener('click', () => showAll(menuOptions))
 buttonMapAll.addEventListener('click', mapAllItems)
 sumAll.addEventListener('click', sumAllItems)
